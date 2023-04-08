@@ -613,6 +613,9 @@ header {
     
 
 }
+.support a:hover{
+    color: rgb(255, 0, 60);
+}
 
 .copyright {
     height: 20px;
