@@ -1,26 +1,21 @@
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
 
 body {
 
     overflow-x: hidden;
-    overflow-y: scroll;
-
-}
-
-.blanck {
-    height: 0px;
-    width: 0px;
-
 }
 
 .main {
     width: 100%;
     background-color: #faf8c5;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    
 
 }
 
@@ -28,12 +23,10 @@ body {
 
 .wall-image {
     clear: both;
-
 }
 
 .wall-image img {
     width: 100%;
-
 }
 
 .nav {
@@ -84,18 +77,22 @@ body {
     text-decoration: none;
 
 }
+.fix-log input {
+    border-radius: 10px;
+    height: 40px;
+    width: 130px;
+    border-color: aqua;
+    background-color: #054073;
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    float: right;
 
-.quote {
-    margin-bottom: 10px;
+
 }
 
-.fix {
-    display: inline;
-
-}
-
-.fix1 {
-    margin-top: 10px;
+.fix-log input:hover {
+    box-shadow: 2px 2px 5px 0px #79ffe4;
 }
 
 .wicon {
@@ -144,7 +141,7 @@ body {
     position: relative;
     top: 525px;
     right: -240px;
-    
+
     float: right;
     z-index: 2;
 
@@ -173,7 +170,12 @@ body {
 
 }
 
-.cont {}
+.cont {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
 
 .course {
     height: 170px;
@@ -239,23 +241,6 @@ body {
     height: 110px;
 }
 
-.fix-log input {
-    border-radius: 10px;
-    height: 40px;
-    width: 130px;
-    border-color: aqua;
-    background-color: #054073;
-    color: white;
-    font-family: serif;
-    font-size: 20px;
-    float: right;
-
-
-}
-
-.fix-log input:hover {
-    box-shadow: 2px 2px 5px 0px #79ffe4;
-}
 
 .reviews {
     height: 50px;
@@ -296,6 +281,7 @@ body {
 .faq_main {
     position: relative;
     top: 70px;
+    box-sizing: border-box;
 }
 
 
@@ -380,7 +366,8 @@ header {
     border: 2px solid rgb(255, 145, 0);
     border-radius: 10%;
     color: #faf8c5;
-    width: 400PX;
+    max-width: 400PX;
+    min-width: 200px;
     text-align: center;
     margin-left: 50px;
 
@@ -427,7 +414,8 @@ header {
 
 .footer {
     background-color: gainsboro;
-    height: 400px;
+    
+    height: 500px;
     width: 100%;
     position: relative;
     top: 150px;
@@ -442,7 +430,7 @@ header {
     height: 300px;
     width: 29%;
     position: relative;
-    top: 50px;
+    top: 40px;
     bottom: auto;
     margin-left: 50px;
     border: #79ffe4 2px solid;
@@ -459,7 +447,6 @@ header {
     background-color: #8600fa71;
     border-radius: 13px;
     width: 100%;
-    height: 100%;
     position: relative;
     justify-content: center;
     text-align: center;
@@ -479,6 +466,7 @@ header {
     font-size: 30px;
 
 }
+
 /* .query input, .query button, .query textarea{
     top: 20px;
 } */
@@ -496,7 +484,8 @@ header {
 
 
 }
-.query textarea{
+
+.query textarea {
     margin-top: 5px;
     height: 75px;
     width: 80%;
@@ -507,7 +496,7 @@ header {
 
 .query table {
     position: relative;
-    
+
     top: 10px;
 }
 
@@ -519,21 +508,23 @@ header {
     border-radius: 10px;
     color: #79ffe4;
     height: 30px;
-    
+
 }
 
 .query form {
-    
+
     width: 100%;
 }
-.dever{
+
+.dever {
     border: 2px solid rgb(255, 140, 0);
     background-color: #00fa7071;
     border-radius: 13px;
     width: 100%;
     height: 100%;
 }
-.dever h1{
+
+.dever h1 {
     height: 40px;
     width: 100%;
     color: rgb(54, 8, 68);
@@ -544,7 +535,8 @@ header {
     text-align: center;
     font-size: 30px;
 }
-.prodev{
+
+.prodev {
     position: relative;
     top: 10px;
     right: 10px;
@@ -558,28 +550,31 @@ header {
     background-repeat: no-repeat;
     box-shadow: 0px 0px 10px 5px rgb(236, 255, 23);
     z-index: 11;
-   
+
 
 }
-.dit{
+
+.dit {
     position: relative;
     top: 10px;
     left: 10px;
     z-index: 10;
 }
-.dit table{
+
+.dit table {
     width: 68%;
     font-size: 20px;
     color: #870940;
     /* border: 2px solid red; */
 
-    
+
 }
-.dit td{
+
+.dit td {
     border-bottom: 2px solid rgb(52, 6, 79);
     padding: 2px;
     margin-left: 10px;
-    
+
 }
 
 .support {
@@ -589,7 +584,8 @@ header {
     width: 100%;
     height: 100%;
 }
-.support h1{
+
+.support h1 {
     height: 40px;
     width: 100%;
     color: rgb(54, 8, 68);
@@ -600,20 +596,23 @@ header {
     text-align: center;
     font-size: 30px;
 }
-.anch{
+
+.anch {
     position: relative;
     top: 10px;
     left: 10px;
 }
-.support a{
+
+.support a {
     text-decoration: none;
     font-size: 30px;
     color: rgb(9, 50, 64);
     display: flex;
-    
+
 
 }
-.support a:hover{
+
+.support a:hover {
     color: rgb(255, 0, 60);
 }
 
@@ -623,27 +622,204 @@ header {
     border-top: 2px solid rgb(41, 1, 76);
     background-color: wheat;
     position: relative;
-    top: 150px;
-    bottom: auto;
-
+    top: 0px;
 }
 
-@media (max-width:400px) {
-    .blanck {
-        height: 100px;
-        width: 100%;
-        background-color: white;
-        color: royalblue;
-        font-size: medium;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: 200px;
-
+@media(max-width:600px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     .main {
-        background-color: white;
+        width: 100%;
+        background-color: #efefad;
+        
+    }
+
+    .wall-image img {
+        display: none;
+
+    
+    }
+    .wall{
+        position: relative;
+        height: 230px;
+        width: 100%;
+        
+    }
+    .nav {
+        text-align: left;
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        margin-left: 50px;
+    
+    }
+    
+    .nav a {
+        margin-left: 15px;
+        color: rgb(3, 37, 50);
+        text-decoration: none;
+        font-size: 24px;
+    }
+    #hm{
         display: none;
     }
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .logo img{
+        height: 50px;
+    }
+    .profile {
+        height: 50px;
+        width: 50px;
+       
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        float: right;
+        background-image: url("prof.jpeg");
+        
+    
+    }
+    .text-line {
+        font-size: 25px;
+        color: rgb(3, 37, 50);
+        position: absolute;
+        top: 70px;
+        left: 30px;
+        text-decoration: none;
+    
+    }
+
+    .fix-log input {
+        border-radius: 10px;
+        height: 30px;
+        width: 100px;
+        border-color: aqua;
+        background-color: #054073;
+        color: white;
+        font-family: serif;
+        font-size: 17px;
+        float: left;
+    }
+    
+    .fix-log input:hover {
+        box-shadow: 2px 2px 5px 0px #79ffe4;
+    }
+    
+    .wicon{
+        display: none;
+    }
+    
+.course {
+    height: 130px;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: cyan; */
+}
+
+.course span {
+    font-size: 18px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    
+}
+
+.cicon {
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+}
+
+.cicon fieldset {
+    width: 60px;
+    height: 90px;
+    float: left;
+    margin-left: 10px;
+    
+}
+
+.reviews th {
+    position: relative;
+    left: 0px;
+
+}
+
+.reviews td {
+    position: relative;
+    left: 0px;
+
+}
+
+header {
+    
+    padding: 5px;
+    
+}
+
+.aboutus h1 {
+    font-size: 30px;
+    width: 200PX;
+    margin-left: 20px;
+}
+
+.contact {
+    position: relative;
+    top: 100px;
+    height: 150px;
+}
+
+.contact table {
+    position: relative;
+    top: 10px;
+    margin-left: 0px;
+
+}
+
+.contact h1 {
+    font-size: 30px;
+    width: 200PX;
+    margin-left: 20px;
+
+}
+.footer {
+    height: 1130px;
+    background-color: gainsboro;
+    position:relative;
+    top: 90px;
+    bottom: 10px;
+    display: inherit;
+    
+}
+.foot_one,
+.foot_two,
+.foot_three {
+    height: 310px;
+    width: 80%;
+    position: relative;
+    top: 50px;
+    bottom: auto;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+.prodev {
+    height: 60px;
+    width: 60px;
+}
+.dit table {
+    width: 68%;
+    font-size: 18px;
+}
+.copyright {
+    top: 0px;
+}
+
 }
