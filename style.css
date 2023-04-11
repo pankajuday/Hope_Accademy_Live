@@ -634,30 +634,39 @@ header {
 
     .main {
         width: 100%;
-        background-color: #f4efb2;
+        background-color: #efefad;
         
     }
 
     .wall-image img {
-        width: 100%;
+        display: none;
+
     
+    }
+    .wall{
+        position: relative;
+        height: 230px;
+        width: 100%;
+        
     }
     .nav {
         text-align: left;
         position: absolute;
-        top: 10px;
+        top: 5px;
         left: 0px;
         margin-left: 50px;
     
     }
     
     .nav a {
-        margin-left: 20px;
-        color: rgb(255, 255, 255);
+        margin-left: 15px;
+        color: rgb(3, 37, 50);
         text-decoration: none;
-        font-size: 25px;
+        font-size: 24px;
     }
-    
+    #hm{
+        display: none;
+    }
     .logo {
         position: absolute;
         top: 10px;
@@ -667,27 +676,23 @@ header {
         height: 50px;
     }
     .profile {
-        height: 80px;
-        width: 80px;
-        border: 2px solid white;
-        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+       
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 40px;
+        right: 30px;
         float: right;
         background-image: url("prof.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-shadow: 0px 0px 40px 10px rgb(255, 255, 24);
-        z-index: 2;
+        
     
     }
     .text-line {
-        font-size: 18px;
-        color: white;
+        font-size: 25px;
+        color: rgb(3, 37, 50);
         position: absolute;
-        top: 80px;
-        left: 20px;
+        top: 70px;
+        left: 30px;
         text-decoration: none;
     
     }
@@ -723,14 +728,14 @@ header {
     font-size: 18px;
     position: relative;
     top: 0px;
-    left: 20px;
+    left: 0px;
     
 }
 
 .cicon {
     position: relative;
     top: 0px;
-    left: 25px;
+    left: 0px;
 
 }
 
@@ -752,6 +757,12 @@ header {
     position: relative;
     left: 0px;
 
+}
+
+header {
+    
+    padding: 5px;
+    
 }
 
 .aboutus h1 {
@@ -799,7 +810,14 @@ header {
     margin-left: 10%;
     margin-bottom: 20px;
 }
-
+.prodev {
+    height: 60px;
+    width: 60px;
+}
+.dit table {
+    width: 68%;
+    font-size: 18px;
+}
 .copyright {
     top: 0px;
 }
