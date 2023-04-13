@@ -15,8 +15,21 @@ body {
     box-sizing: border-box;
     /* border: 2px solid red; */
     overflow: hidden;
-    
-
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(183, 180, 180, 0.404);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #06352d;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #79ffe4;
 }
 
 .wall {}
